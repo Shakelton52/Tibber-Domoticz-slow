@@ -3,9 +3,9 @@ Floppy999 archived the original repo.
 The original script unfortunately polls the Realtime Values every 10 sec, which leads to a DoS Attack of the Tibber server.
 
 So this fork was necessary to fix the code in order to prevent the plugin from exessive polling, but its only a mitigation -
-The complete Realtime Messurment Polling has to be redesigned.
+The complete Realtime liveMeasurement Polling has to be redesigned.
 
-Realtime Messurement is disabled by default.
+Realtime liveMeasurement is disabled by default.
 
 If you want to enable it, you have to set. 
 PUlse = 1 
@@ -20,7 +20,8 @@ WARNING: Tibber probably will lock your API Key if you enable  RealtimeMessureme
 ------- I am not responsible for any damage the plugin causes  ---------- 
 
 -------- If you use the plugin, you accept this conditions. --------------
--------- If you do not accept this, you are entitled to  use it ------------------
+
+-------- If you do not accept this, you are entitled to  use the plugin ------------------
 
 Cheers Shakelton52
 
