@@ -403,7 +403,7 @@ class BasePlugin:
             self.Count = 13
 
 
-        if self.Count == 3 and HourNow >= 0 and MinuteNow >= 10 and MinuteNow < 59 and self.MiniMaxMeanPriceUpdated is False and self.Subscription is True:
+        if ( self.Count == 1 or self.Count == 5 or self.Count == 9 or self.Count == 14 or self.Count == 19 ) and HourNow >= 0 and MinuteNow >= 10 and MinuteNow < 59 and self.MiniMaxMeanPriceUpdated is False and self.Subscription is True:
             if not _plugin.GetDataMiniMaxMean.Connected() and not _plugin.GetDataMiniMaxMean.Connecting():
                 WriteDebug("onHeartbeatGetDataMiniMaxMean")
                 _plugin.GetDataMiniMaxMean.Connect()
