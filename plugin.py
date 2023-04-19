@@ -342,7 +342,7 @@ class BasePlugin:
                         for name,value in result["liveMeasurement"].items():
                             if value is not None:
                                 UpdateDevice(str(name), str(value))
-                    Domoticz.Log("Live power updated P P U I")
+                    Domoticz.Log("Live power updated P pP U I")
                 except Exception as e:
                     Domoticz.Log(str(traceback.format_exc()))
                     Domoticz.Log(str(sys.exc_info()[0]))
