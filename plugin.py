@@ -61,7 +61,9 @@ PUlse = 0  # set 1 if you want to have realtime data from pulse, your api key mi
 
 ABC = []
 
-import traceback, sys
+import traceback, sys, time
+
+time.sleep(90)
 
 try:
     from datetime import datetime
