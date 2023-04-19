@@ -63,7 +63,7 @@ ABC = []
 
 import traceback, sys, time
 
-time.sleep(90)
+time.sleep(55)
 
 try:
     from datetime import datetime
