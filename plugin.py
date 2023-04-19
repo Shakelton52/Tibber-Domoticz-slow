@@ -393,7 +393,7 @@ class BasePlugin:
         if self.Count == 1 and MinuteNow == 59 and self.LiveDataUpdated is True:
             self.LiveDataUpdated = False
 
-        if self.Count == 13 and MinuteNow < 59 and self.CurrentPriceUpdated is False and self.Subscription is True:
+        if self.Count == 14 and MinuteNow < 59 and self.CurrentPriceUpdated is False and self.Subscription is True:
             if not _plugin.GetDataCurrent.Connected() and not _plugin.GetDataCurrent.Connecting():
                 WriteDebug("onHeartbeatGetDataCurrent")
                 Domoticz.Log("CurrentPrice Updated")
